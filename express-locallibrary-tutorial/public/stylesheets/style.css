@@ -1,8 +1,18 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #f7b2ad;
 }
 
 a {
   color: #00B7FF;
 }
+
+/*color scheme
+rgb(160, 255, 255) light teal
+rgb(255, 216, 247) light pink
+rgb(177, 252, 199) light green
+rgb(251, 252, 177) light yellow
+rgb(216, 209, 251) light purple
+#f7b2ad coral
+*/
