@@ -17,7 +17,7 @@ async function fetchTodos() {
         checkbox.type = "checkbox";
         checkbox.checked = todo.done;
         checkbox.addEventListener("change", async () => {
-            await fetch(`${BASE_URL}/api/todos/${todo.id}`, {
+            await fetch(`${BASE_URL}/api/todos/${todo._id}`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ done: checkbox.checked }),
@@ -40,7 +40,7 @@ async function fetchTodos() {
             e.stopPropagation();
             const newText = prompt("Edit your task:", todo.text);
             if (newText !== null && newText.trim() !== "") {
-                await fetch(`${BASE_URL}/api/todos/${todo.id}`, {
+                await fetch(`${BASE_URL}/api/todos/${todo._id}`, {
                     method: "PUT",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ text: newText }),
@@ -54,7 +54,7 @@ async function fetchTodos() {
         delBtn.style.marginLeft = "10px";
         delBtn.addEventListener("click", async (e) => {
             e.stopPropagation();
-            await fetch(`${BASE_URL}/api/todos/${todo.id}`, {
+            await fetch(`${BASE_URL}/api/todos/${todo._id}`, {
                 method: "DELETE"
             });
             fetchTodos();
