@@ -1,7 +1,7 @@
 body {
   padding: 50px;
   font: 14px;
-  background-color: #aaffb8;
+  background-color: #cdffcf;
 }
 
 a {
@@ -69,11 +69,56 @@ input[type="checkbox"]{
   cursor: pointer;
 }
 
+.pomodoro-timer{
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  width: fit-content;
+  text-align: center;
+  font-family: 'Sour Gummy', cursive;
+  background-color: green;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba (0,0,0,0.2);
+}
+
+#timer{
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.pomodoro-timer button {
+  background-color:rgb(47, 219, 84);
+  font-size: 1rem;
+  color: var(--button-text);
+  border: none;
+  padding: 6px 12px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.pomodoro-timer button:hover {
+  background-color:rgb(0, 66, 15);
+  color: white;
+}
+
+#pomodoro-counter {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-family: 'Delius', cursive;
+  font-size: 1rem;
+  background-color: rgb(92, 243, 144);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+h2{
+  color:rgb(47, 219, 84);
+}
 /*
 fonts
 
 heading: Delius Swash Caps
 subheading: Delius
 list item: hi melody
-button: Chewy or chewy bubble
+button: Sour gummy
 */
