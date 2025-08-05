@@ -1,18 +1,79 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #f7b2ad;
+  font: 14px;
+  background-color: #aaffb8;
 }
 
 a {
   color: #00B7FF;
 }
 
-/*color scheme
-rgb(160, 255, 255) light teal
-rgb(255, 216, 247) light pink
-rgb(177, 252, 199) light green
-rgb(251, 252, 177) light yellow
-rgb(216, 209, 251) light purple
-#f7b2ad coral
+h1{
+  font-family: "Delius Swash Caps";
+  text-align: center;
+  margin-top: 0;
+  color: green;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: "Delius";
+  text-align: center;
+  color: darkgreen;
+  font-size: 20px;
+}
+
+button {
+  background-color:rgb(15, 143, 43);
+  color: black;
+  font-size:16px;
+  font-family:"Sour Gummy";
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color:rgb(0, 66, 15);
+  color: white;
+}
+
+li {
+  font-family: "Hi Melody";
+  font-size: 24px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.add-task {
+  display: flex;
+  justify-content: center; 
+}
+
+#todo-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#todo-input {
+  font-family: "Hi Melody";
+  font-size: 20px;
+}
+
+input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+  accent-color: #42a816;
+  cursor: pointer;
+}
+
+/*
+fonts
+
+heading: Delius Swash Caps
+subheading: Delius
+list item: hi melody
+button: Chewy or chewy bubble
 */
