@@ -148,3 +148,21 @@ startBtn.addEventListener("click", startTimer);
 resetBtn.addEventListener("click", resetTimer);
 
 updateTimerDisplay();
+
+const themeSelector=document.getElementById('theme-selector');
+
+themeSelector.addEventListener('change', (e) => {
+    const theme = e.target.value;
+    document.body.className='';
+    document.body.classList.add(`theme-${theme}`);
+});
+
+const savedTheme = localStorage.getItem('selectedTheme') || 'green';
+document.body.className=`theme-${savedTheme}`;
+themeSelector.value = savedTheme;
+
+themeSelector.addEventListener('change', (e) => {
+    const selectedTheme = e.target.value;
+    document.body.className=`theme-${selectedTheme}`;
+    localStorage.setItem('selectedTheme', selectedTheme);
+});
