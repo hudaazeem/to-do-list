@@ -22,6 +22,7 @@ async function fetchTodos() {
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ done: checkbox.checked }),
             });
+            triggerThemeConfetti();
             fetchTodos();
         });
 
@@ -166,3 +167,24 @@ themeSelector.addEventListener('change', (e) => {
     document.body.className=`theme-${selectedTheme}`;
     localStorage.setItem('selectedTheme', selectedTheme);
 });
+
+function triggerThemeConfetti()  {
+    const theme = document.body.className;
+
+    let colors = ['#ffffff'];
+
+    if(theme.includes('green')){
+        colors = ['#42a816', '#6fdc6f', '#93e29b'];
+    } else if (theme.includes('sky')) {
+        colors =  ['#4ca9df', '#3a7ca5', '#b3e6ff'];
+    } else if (theme.includes('pastel')){
+        colors = ['#ffaad5', '#ffcce6', '#ffdff0', '#ff6bb5'];
+    }
+
+    confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: {y:0.6},
+        colors: colors
+    });
+}

@@ -70,7 +70,7 @@ body.theme-green {
 
 .theme-green #todo-input {
   font-family: "Hi Melody";
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .theme-green input[type="checkbox"]{
@@ -167,7 +167,7 @@ body.theme-sky {
 
 .theme-sky h1 {
   color: #5ab0db;
-  font-family: "Delius Swash Caps";
+  font-family: "Red Hat Text";
   text-align: center;
   margin-top: 0;
   font-size: 40px;
@@ -175,16 +175,16 @@ body.theme-sky {
 
 .theme-sky h3 {
   color: #3a7ca5;
-  font-family: "Delius";
+  font-family: "Alumni Sans Pinstripe";
   text-align: center;
-  font-size: 20px;
+  font-size: 28px;
 }
 
 .theme-sky button {
   background-color: #83d1f7;
   color: white;
-  font-size:16px;
-  font-family:"Sour Gummy";
+  font-size:20px;
+  font-family:"Alumni Sans Pinstripe";
   padding: 6px 12px;
   border: none;
   border-radius: 8px;
@@ -197,8 +197,8 @@ body.theme-sky {
 }
 
 .theme-sky li{
-  font-family: "Hi Melody";
-  font-size: 24px;
+  font-family: "Gowun Dodum";
+  font-size: 17px;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -218,7 +218,7 @@ body.theme-sky {
   padding: 1rem 2rem;
   width: fit-content;
   text-align: center;
-  font-family: 'Sour Gummy', cursive;
+  font-family: 'Dongle';
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba (0,0,0,0.2);
   
@@ -226,6 +226,7 @@ body.theme-sky {
 
 .theme-sky .pomodoro-timer button {
   background-color: #59afd4;
+  font-family: "Alumni Sans Pinstripe";
   color: white;
   cursor: url('/images/sky-cursor-1.png') 4 4, pointer;
 }
@@ -239,9 +240,8 @@ body.theme-sky {
   position: absolute;
   top: 10px;
   right: 20px;
-  font-size: 1rem;
-  font-family: "Sour Gummy";
-  font-size: 1rem;
+  font-family: "Dongle";
+  font-size: 24px;
   background-color: rgba(255, 255, 255, 0.6);
   padding: 6px 10px;
   border-radius: 8px;
@@ -249,16 +249,22 @@ body.theme-sky {
 
 .theme-sky h2 {
   color: #183b4d;
+  font-size: 40px;
+  margin-top: 8px;
+  margin-bottom: 0px;
 }
 
 .theme-sky #timer{
-  font-size: 3rem;
+  font-size: 75px;
   margin: 1rem 0;
   color: #183b4d;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .theme-sky .add-task {
   display: flex;
+
   justify-content: center; 
 }
 
@@ -275,16 +281,16 @@ body.theme-sky {
 }
 
 .theme-sky #todo-input {
-  font-family: "Hi Melody";
-  font-size: 20px;
+  font-family: "Gowun Dodum";
+  font-size: 16px;
 }
 
 .theme-sky .theme-selector-container {
   position: absolute;
   top: 10px;
   left: 20px;
-  font-family: "Sour Gummy";
-  font-size: 1rem;
+  font-family: "Dongle";
+  font-size: 24px;
   background-color: rgba(255, 255, 255, 0.6);
   padding: 6px 10px;
   border-radius: 8px;
@@ -293,7 +299,7 @@ body.theme-sky {
 }
 
 .theme-sky #theme-selector-wrapper select {
-  font-family: "Sour Gummy";
+  font-family: "Dongle";
   padding: 4px 6px;
   border-radius: 6px;
   border: 1px solid #ccc;
@@ -314,7 +320,7 @@ body.theme-pastel {
 
 .theme-pastel h1 {
   color: #f52cb2;
-  font-family: "Delius Swash Caps";
+  font-family: "Sofia";
   text-align: center;
   margin-top: 0;
   font-size: 40px;
@@ -322,16 +328,16 @@ body.theme-pastel {
 
 .theme-pastel h3 {
   color: #bf228b;
-  font-family: "Delius";
+  font-family: "Delicious Handrawn";
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .theme-pastel button {
   background-color: #ffaad5;
   color: white;
   font-size:16px;
-  font-family:"Sour Gummy";
+  font-family:"Delicious Handrawn";
   padding: 6px 12px;
   border: none;
   border-radius: 8px;
@@ -344,8 +350,8 @@ body.theme-pastel {
 }
 
 .theme-pastel li{
-  font-family: "Hi Melody";
-  font-size: 24px;
+  font-family: "Send Flowers";
+  font-size: 20px;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -365,7 +371,7 @@ body.theme-pastel {
   padding: 1rem 2rem;
   width: fit-content;
   text-align: center;
-  font-family: 'Sour Gummy', cursive;
+  font-family: 'Vibur', cursive;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba (0,0,0,0.2);
   
@@ -374,6 +380,7 @@ body.theme-pastel {
 .theme-pastel .pomodoro-timer button {
   background-color: #a6338d;
   color: white;
+  font-family: "Delicious Handrawn";
   cursor: url('/images/pastel-cursor-1.png') 4 4, pointer;
 }
 
@@ -387,7 +394,7 @@ body.theme-pastel {
   top: 10px;
   right: 20px;
   font-size: 1rem;
-  font-family: "Sour Gummy";
+  font-family: "Vibur";
   font-size: 1rem;
   background-color: rgba(255, 255, 255, 0.6);
   padding: 6px 10px;
@@ -396,6 +403,7 @@ body.theme-pastel {
 
 .theme-pastel h2 {
   color: #662757;
+  font-size: 28px;
 }
 
 .theme-pastel #timer{
@@ -422,7 +430,7 @@ body.theme-pastel {
 }
 
 .theme-pastel #todo-input {
-  font-family: "Hi Melody";
+  font-family: "Send Flowers";
   font-size: 20px;
 }
 
@@ -430,7 +438,7 @@ body.theme-pastel {
   position: absolute;
   top: 10px;
   left: 20px;
-  font-family: "Sour Gummy";
+  font-family: "Vibur";
   font-size: 1rem;
   background-color: rgba(255, 255, 255, 0.6);
   padding: 6px 10px;
@@ -448,9 +456,9 @@ body.theme-pastel {
 }
 /*
 fonts
-
-heading: Delius Swash Caps
-subheading: Delius
-list item: hi melody
-button: Sour gummy
+SKY BLUE:
+h1: Sofia
+h3 and button: Delicious Handrawn
+list item and input: Send Flowers
+pomodoro counter, pomodoro timer, theme selector: Vibur
 */
