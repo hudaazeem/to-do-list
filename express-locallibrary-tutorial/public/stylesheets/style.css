@@ -454,11 +454,356 @@ body.theme-pastel {
   border: 1px solid #ccc;
   cursor: url('/images/pastel-cursor-1.png') 4 4, auto;
 }
+
+.theme-green p {
+  text-align: center;
+  font-size: 18px;
+  font-family:"Delius Swash Caps";
+  
+}
+
+.theme-sky p {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Red Hat Text";
+  
+}
+
+.theme-pastel p {
+  text-align: center;
+  font-size: 18px;
+  font-family:"Sofia" ;
+  
+}
+
+body.theme-lava {
+  padding: 50px;
+  font: 14px;
+  background-image: url('/images/lava-background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  cursor: url('/images/green-cursor-1.png') 4 4, auto;
+  min-height: 100vh;
+}
+
+.theme-lava h1{
+  font-family: "Bebas Neue";
+  text-align: center;
+  margin-top: 0;
+  color: rgb(29, 90, 29);
+  font-size: 40px;
+}
+
+.theme-lava h3 {
+  font-family: "Teko";
+  text-align: center;
+  color: #253b2c;
+  font-size: 20px;
+}
+
+.theme-lava button {
+  background-color:#639473;
+  color: black;
+  font-size:16px;
+  font-family:"Teko";
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
+}
+
+.theme-lava button:hover{
+  background-color:#476e53;
+  color: white;
+  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
+}
+
+.theme-lava li {
+  font-family: "Chakra Petch";
+  font-size: 24px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.theme-lava .add-task {
+  display: flex;
+  justify-content: center; 
+}
+
+.theme-lava #todo-list {
+  list-style-type: none;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.6); /* White with 60% opacity */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.theme-lava #todo-input {
+  font-family: "Chakra Petch";
+  font-size: 18px;
+}
+
+.theme-lava input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+  accent-color: #73c98e;
+  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
+}
+
+.theme-lava .pomodoro-timer{
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  width: fit-content;
+  text-align: center;
+  font-family: 'Rajdhani', cursive;
+  background-color: #639473;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba (0,0,0,0.2);
+}
+
+.theme-lava #timer{
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: #112617;
+}
+
+.theme-lava .pomodoro-timer button {
+  background-color:#87a891;
+  font-size: 1rem;
+  color: var(--button-text);
+  border: none;
+  padding: 6px 12px;
+  margin-left: 6px;
+  margin-right: 6px;
+  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
+}
+
+.theme-lava .pomodoro-timer button:hover {
+  background-color:#112617;
+  color: white;
+  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
+}
+
+.theme-lava #pomodoro-counter {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1rem;
+  font-family: "Rajdhani";
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+
+
+.theme-lava h2{
+  color:#112617;
+}
+
+.theme-lava .theme-selector-container {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-family: "Rajdhani";
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 6px 10px;
+  border-radius: 8px;
+  z-index: 1000;
+  cursor: url('/images/green-cursor-2.png') 4 4, auto;
+}
+
+.theme-lava #theme-selector-wrapper select {
+  font-family: "Rajdhani";
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: url('/images/green-cursor-2.png') 4 4, auto;
+}
+
+.theme-lava p {
+  text-align: center;
+  font-size: 18px;
+  font-family:"Bebas Neue" ;
+
+}
+
+body.theme-sunny {
+  padding: 50px;
+  font: 14px;
+  background-image: url('https://t3.ftcdn.net/jpg/02/78/80/04/360_F_278800443_sZdaH7Aaqp3VR0JUU3uJsNGOw8HDmQ5V.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  cursor: url('/images/green-cursor-1.png') 4 4, auto;
+  min-height: 100vh;
+}
+
+.theme-sunny h1{
+  font-family: "Chewy";
+  text-align: center;
+  margin-top: 0;
+  color: rgb(29, 90, 29);
+  font-size: 40px;
+}
+
+.theme-sunny h3 {
+  font-family: "Comfortaa";
+  text-align: center;
+  color: #253b2c;
+  font-size: 20px;
+}
+
+.theme-sunny button {
+  background-color:#639473;
+  color: black;
+  font-size:16px;
+  font-family:"Comfortaa";
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
+}
+
+.theme-sunny button:hover{
+  background-color:#476e53;
+  color: white;
+  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
+}
+
+.theme-sunny li {
+  font-family: "Quicksand";
+  font-size: 24px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.theme-sunny .add-task {
+  display: flex;
+  justify-content: center; 
+}
+
+.theme-sunny #todo-list {
+  list-style-type: none;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.6); /* White with 60% opacity */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.theme-sunny #todo-input {
+  font-family: "Quicksand";
+  font-size: 18px;
+}
+
+.theme-sunny input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+  accent-color: #73c98e;
+  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
+}
+
+.theme-sunny .pomodoro-timer{
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  width: fit-content;
+  text-align: center;
+  font-family: 'Karla', cursive;
+  background-color: #639473;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba (0,0,0,0.2);
+}
+
+.theme-sunny #timer{
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: #112617;
+}
+
+.theme-sunny .pomodoro-timer button {
+  background-color:#87a891;
+  font-size: 1rem;
+  color: var(--button-text);
+  border: none;
+  padding: 6px 12px;
+  margin-left: 6px;
+  margin-right: 6px;
+  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
+}
+
+.theme-sunny .pomodoro-timer button:hover {
+  background-color:#112617;
+  color: white;
+  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
+}
+
+.theme-sunny #pomodoro-counter {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1rem;
+  font-family: "Karla";
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+
+
+.theme-sunny h2{
+  color:#112617;
+}
+
+.theme-sunny .theme-selector-container {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-family: "Karla";
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 6px 10px;
+  border-radius: 8px;
+  z-index: 1000;
+  cursor: url('/images/green-cursor-2.png') 4 4, auto;
+}
+
+.theme-sunny #theme-selector-wrapper select {
+  font-family: "Karla";
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: url('/images/green-cursor-2.png') 4 4, auto;
+}
+
+.theme-sunny p {
+  text-align: center;
+  font-size: 18px;
+  font-family:"Chewy" ;
+
+}
 /*
 fonts
 SKY BLUE:
-h1: Sofia
-h3 and button: Delicious Handrawn
-list item and input: Send Flowers
-pomodoro counter, pomodoro timer, theme selector: Vibur
+h1 and completion: Bebas Neue
+h3 and button: Teko
+list item and input: Chakra Petch
+pomodoro counter, pomodoro timer, theme selector: Rajdhani
 */

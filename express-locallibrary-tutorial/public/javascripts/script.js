@@ -10,12 +10,16 @@ async function fetchTodos() {
 
     list.innerHTML = "";
 
+    let completedCount = 0;
+
     todos.forEach((todo) => {
         const li = document.createElement("li");
 
         const checkbox = document.createElement("input");
         checkbox.type = "checkbox";
         checkbox.checked = todo.done;
+        if(todo.done) completedCount++;
+
         checkbox.addEventListener("change", async () => {
             await fetch(`${BASE_URL}/api/todos/${todo._id}`, {
                 method: "PUT",
@@ -65,6 +69,13 @@ async function fetchTodos() {
         li.appendChild(delBtn);
         list.appendChild(li);
     });
+
+    const percentage = todos.length >0
+        ? ((completedCount/todos.length)*100).toFixed(1)
+        : 0;
+    
+    document.getElementById("task-progress").textContent=
+        `You've completed ${percentage}% of your tasks!`;
 }
 
 form.addEventListener("submit", async (e) => {
@@ -179,6 +190,10 @@ function triggerThemeConfetti()  {
         colors =  ['#4ca9df', '#3a7ca5', '#b3e6ff'];
     } else if (theme.includes('pastel')){
         colors = ['#ffaad5', '#ffcce6', '#ffdff0', '#ff6bb5'];
+    } else if(theme.includes('lava')){
+        colors= ['#ff4d00', '#ff9900', '#cc3300', '#800000'];
+    } else if(theme.includes('sunny')){
+        colors = ['#ffd700', '#ffa500', '#ffcc33', '#fff176'];
     }
 
     confetti({
