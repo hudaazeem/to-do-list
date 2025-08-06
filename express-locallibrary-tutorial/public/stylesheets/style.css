@@ -2,41 +2,44 @@ body.theme-green {
   padding: 50px;
   font: 14px;
   background-image: url('https://res.cloudinary.com/gimmersta-wallpaper/image/upload/c_fill,f_auto,fl_progressive,q_auto,w_1100,h_800/v1724415939/articles/R20824_product.jpg');
-   background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  cursor: url('/images/green-cursor-1.png') 4 4, auto;
+  min-height: 100vh;
 }
 
 .theme-green h1{
   font-family: "Delius Swash Caps";
   text-align: center;
   margin-top: 0;
-  color: green;
+  color: rgb(29, 90, 29);
   font-size: 40px;
 }
 
 .theme-green h3 {
   font-family: "Delius";
   text-align: center;
-  color: darkgreen;
+  color: #253b2c;
   font-size: 20px;
 }
 
 .theme-green button {
-  background-color:rgb(15, 143, 43);
+  background-color:#639473;
   color: black;
   font-size:16px;
   font-family:"Sour Gummy";
   padding: 6px 12px;
   border: none;
   border-radius: 8px;
-  cursor: pointer;
+  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
 }
 
 .theme-green button:hover{
-  background-color:rgb(0, 66, 15);
+  background-color:#476e53;
   color: white;
+  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
 }
 
 .theme-green li {
@@ -54,7 +57,15 @@ body.theme-green {
 
 .theme-green #todo-list {
   list-style-type: none;
-  padding-left: 0;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.6); /* White with 60% opacity */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 .theme-green #todo-input {
@@ -65,8 +76,8 @@ body.theme-green {
 .theme-green input[type="checkbox"]{
   width: 20px;
   height: 20px;
-  accent-color: #42a816;
-  cursor: pointer;
+  accent-color: #73c98e;
+  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
 }
 
 .theme-green .pomodoro-timer{
@@ -75,7 +86,7 @@ body.theme-green {
   width: fit-content;
   text-align: center;
   font-family: 'Sour Gummy', cursive;
-  background-color: green;
+  background-color: #639473;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba (0,0,0,0.2);
 }
@@ -83,38 +94,63 @@ body.theme-green {
 .theme-green #timer{
   font-size: 3rem;
   margin: 1rem 0;
+  color: #112617;
 }
 
 .theme-green .pomodoro-timer button {
-  background-color:rgb(47, 219, 84);
+  background-color:#87a891;
   font-size: 1rem;
   color: var(--button-text);
   border: none;
   padding: 6px 12px;
   margin-left: 6px;
   margin-right: 6px;
+  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
 }
 
 .theme-green .pomodoro-timer button:hover {
-  background-color:rgb(0, 66, 15);
+  background-color:#112617;
   color: white;
+  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
 }
 
 .theme-green #pomodoro-counter {
   position: absolute;
   top: 10px;
   right: 20px;
-  font-family: 'Delius', cursive;
   font-size: 1rem;
-  background-color: rgb(92, 243, 144);
-  padding: 5px 10px;
-  border-radius: 10px;
+  font-family: "Sour Gummy";
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 6px 10px;
+  border-radius: 8px;
 }
 
 
 
 .theme-green h2{
-  color:rgb(47, 219, 84);
+  color:#112617;
+}
+
+.theme-green .theme-selector-container {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-family: "Sour Gummy";
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 6px 10px;
+  border-radius: 8px;
+  z-index: 1000;
+  cursor: url('/images/green-cursor-2.png') 4 4, auto;
+}
+
+.theme-green #theme-selector-wrapper select {
+  font-family: "Sour Gummy";
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: url('/images/green-cursor-2.png') 4 4, auto;
 }
 
 body.theme-sky {
@@ -125,10 +161,12 @@ body.theme-sky {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  cursor: url('/images/sky-cursor-2.png') 4 4, auto;
+  min-height: 100vh;
 }
 
 .theme-sky h1 {
-  color: #3a7ca5;
+  color: #5ab0db;
   font-family: "Delius Swash Caps";
   text-align: center;
   margin-top: 0;
@@ -136,25 +174,26 @@ body.theme-sky {
 }
 
 .theme-sky h3 {
-  color: #2e5878;
+  color: #3a7ca5;
   font-family: "Delius";
   text-align: center;
   font-size: 20px;
 }
 
 .theme-sky button {
-  background-color: #4ca9df;
+  background-color: #83d1f7;
   color: white;
   font-size:16px;
   font-family:"Sour Gummy";
   padding: 6px 12px;
   border: none;
   border-radius: 8px;
-  cursor: pointer;
+  cursor: url('/images/sky-cursor-1.png') 4 4, pointer;
 }
 
 .theme-sky button:hover {
-  background-color: #356e8c;
+  background-color: #538299;
+  cursor: url('/images/sky-cursor-1.png') 4 4, pointer;
 }
 
 .theme-sky li{
@@ -170,11 +209,11 @@ body.theme-sky {
   accent-color: #3a7ca5;
   width: 20px;
   height: 20px;
-  cursor: pointer;
+  cursor: url('/images/sky-cursor-1.png') 4 4, pointer;
 }
 
 .theme-sky .pomodoro-timer {
-  background-color: #4ca9df;
+  background-color: #b8dff2;
   margin: 2rem auto;
   padding: 1rem 2rem;
   width: fit-content;
@@ -186,33 +225,36 @@ body.theme-sky {
 }
 
 .theme-sky .pomodoro-timer button {
-  background-color: #3a7ca5;
+  background-color: #59afd4;
   color: white;
+  cursor: url('/images/sky-cursor-1.png') 4 4, pointer;
 }
 
 .theme-sky .pomodoro-timer button:hover {
-  background-color: #2e5878;
+  background-color: #538299;
+  cursor: url('/images/sky-cursor-1.png') 4 4, pointer;
 }
 
 .theme-sky #pomodoro-counter {
-  background-color: #b3e6ff;
-  color: #1e3f5a;
   position: absolute;
   top: 10px;
   right: 20px;
-  font-family: 'Delius', cursive;
   font-size: 1rem;
-  padding: 5px 10px;
-  border-radius: 10px;
+  font-family: "Sour Gummy";
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 6px 10px;
+  border-radius: 8px;
 }
 
 .theme-sky h2 {
-  color: #3a7ca5;
+  color: #183b4d;
 }
 
 .theme-sky #timer{
   font-size: 3rem;
   margin: 1rem 0;
+  color: #183b4d;
 }
 
 .theme-sky .add-task {
@@ -222,12 +264,40 @@ body.theme-sky {
 
 .theme-sky #todo-list {
   list-style-type: none;
-  padding-left: 0;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.6); /* White with 60% opacity */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .theme-sky #todo-input {
   font-family: "Hi Melody";
   font-size: 20px;
+}
+
+.theme-sky .theme-selector-container {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-family: "Sour Gummy";
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 6px 10px;
+  border-radius: 8px;
+  z-index: 1000;
+  cursor: url('/images/sky-cursor-1.png') 4 4, auto;
+}
+
+.theme-sky #theme-selector-wrapper select {
+  font-family: "Sour Gummy";
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: url('/images/sky-cursor-1.png') 4 4, auto;
 }
 
 body.theme-pastel {
@@ -238,10 +308,12 @@ body.theme-pastel {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  cursor: url('/images/pastel-cursor-2.png') 4 4, auto;
+  min-height: 100vh;
 }
 
 .theme-pastel h1 {
-  color: #ff6bb5;
+  color: #f52cb2;
   font-family: "Delius Swash Caps";
   text-align: center;
   margin-top: 0;
@@ -249,7 +321,7 @@ body.theme-pastel {
 }
 
 .theme-pastel h3 {
-  color: #ff85c1;
+  color: #bf228b;
   font-family: "Delius";
   text-align: center;
   font-size: 20px;
@@ -263,11 +335,12 @@ body.theme-pastel {
   padding: 6px 12px;
   border: none;
   border-radius: 8px;
-  cursor: pointer;
+  cursor: url('/images/pastel-cursor-1.png') 4 4, pointer;
 }
 
 .theme-pastel button:hover {
   background-color: #ff6bb5;
+  cursor: url('/images/pastel-cursor-1.png') 4 4, pointer;
 }
 
 .theme-pastel li{
@@ -283,11 +356,11 @@ body.theme-pastel {
   accent-color: #ff6bb5;
   width: 20px;
   height: 20px;
-  cursor: pointer;
+  cursor: url('/images/pastel-cursor-1.png') 4 4, pointer;
 }
 
 .theme-pastel .pomodoro-timer {
-  background-color: #ffdff0;
+  background-color: #e889d3;
   margin: 2rem auto;
   padding: 1rem 2rem;
   width: fit-content;
@@ -299,33 +372,36 @@ body.theme-pastel {
 }
 
 .theme-pastel .pomodoro-timer button {
-  background-color: #ffcce6;
+  background-color: #a6338d;
   color: white;
+  cursor: url('/images/pastel-cursor-1.png') 4 4, pointer;
 }
 
 .theme-pastel .pomodoro-timer button:hover {
-  background-color: #ff6bb5;
+  background-color: #662757;
+  cursor: url('/images/pastel-cursor-1.png') 4 4, pointer;
 }
 
 .theme-pastel #pomodoro-counter {
-  background-color: #ffb3f0;
-  color: #1e3f5a;
   position: absolute;
   top: 10px;
   right: 20px;
-  font-family: 'Delius', cursive;
   font-size: 1rem;
-  padding: 5px 10px;
-  border-radius: 10px;
+  font-family: "Sour Gummy";
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 6px 10px;
+  border-radius: 8px;
 }
 
 .theme-pastel h2 {
-  color: #ffcce6;
+  color: #662757;
 }
 
 .theme-pastel #timer{
   font-size: 3rem;
   margin: 1rem 0;
+  color: #662757;
 }
 
 .theme-pastel .add-task {
@@ -335,7 +411,14 @@ body.theme-pastel {
 
 .theme-pastel #todo-list {
   list-style-type: none;
-  padding-left: 0;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.6); /* White with 60% opacity */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .theme-pastel #todo-input {
@@ -343,6 +426,26 @@ body.theme-pastel {
   font-size: 20px;
 }
 
+.theme-pastel .theme-selector-container {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-family: "Sour Gummy";
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 6px 10px;
+  border-radius: 8px;
+  z-index: 1000;
+  cursor: url('/images/pastel-cursor-1.png') 4 4, auto;
+}
+
+.theme-pastel #theme-selector-wrapper select {
+  font-family: "Sour Gummy";
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: url('/images/pastel-cursor-1.png') 4 4, auto;
+}
 /*
 fonts
 
