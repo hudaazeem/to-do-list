@@ -5,7 +5,10 @@ const cors = require("cors");
 const path = require("path");
 
 const app = express(); 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4002;
+
+
+const mongodb_uri = process.env.MONGODB_URI || 'mongodb+srv://hudaazeem:qazplm456@todo-list.tkdmc4g.mongodb.net/?retryWrites=true&w=majority&appName=todo-list'
 
 const corsOptions = {
   origin: "*", 
@@ -22,7 +25,9 @@ app.get('/health', (req, res) => {
   res.send('Backend is running and healthy.');
 });
 
-mongoose.connect(process.env.MONGODB_URI, { dbName: 'todoDB' })
+
+
+mongoose.connect(mongodb_uri, { dbName: 'todoDB' })
   .then(() => {
     console.log("Connected to MongoDB Atlas");
 
