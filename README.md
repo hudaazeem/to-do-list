@@ -1,20 +1,41 @@
-# express_node_template
+# To Do List
 
-This is a basic Node.js & Express template.
+This is a to do list web app made for the Athena Awards.
 
-To use it, follow these steps:
+#### Demo link: [placeholder]
 
-**1.** Go to the top-left corner and click **"Use this template"** to open a dropdown.  
-![Step 1](images/1.png)
+### Features
 
-**2.** In the dropdown, click **"Create a new repository"**.  
-![Step 2](images/2.png)
+* Pomodoro timer
+* 5 different website themes
+* Custom cursors matching selected website theme
+* Confetti effect when users complete a task
+* Text showing how many pomodoros are completed
+* Text showing percentage of tasks completed.
 
-**3.** Set your desired repository name.  
-![Step 3](images/3.png)
 
-**4.** Click **"Create repository"**.  
-![Step 4](images/4.png)
+### Why I made this project
 
-**5.** In the newly created repository, click the green **"Code"** button, then select **"Create codespace on main"**.  
-![Step 5](images/5.png)
+I thought that making a to do list would be a great way to start learning backend with Node.JS and Express. I also love using to do lists, so this was a useful project to make for myself to use. 
+
+### How I made my project
+
+* Node.JS and Express for backend
+* HTML and CSS for frontend
+* MongoDB to store users' data after restarting the server
+* W3Schools as a reference for front end
+* The Athena Express YSWS website as a reference for back end 
+* Google Fonts for my fonts
+
+### What I struggled with
+
+I struggled the most with incorporating MongoDB Atlas to my web app. I never did anything like that ever before, so it was challenging, especially with the errors from linking my account properly on here. But eventually, after googling for help, I got it!
+
+### What I learned
+
+I learned a lot on this project, such as  
+* Concepts of basic backend programming with Node.js and Express
+* Saving user data using MongoDB Atlas. 
+* More advanced CSS such as importing fonts, using custom cursors, different css options, etc.
+
+
