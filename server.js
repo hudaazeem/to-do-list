@@ -52,6 +52,12 @@ app.delete('/api/todos/:id', async (req, res) => {
   //res.sendFile(path.join(__dirname, 'public', 'index.html'));
 //});
 
+app.use((err, req, res, next) => {
+  console.error('Global error handler:', err.stack);
+  res.status(500).send('Something broke!');
+});
+
+
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
