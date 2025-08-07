@@ -473,6 +473,7 @@ body.theme-pastel {
   text-align: center;
   font-size: 18px;
   font-family:"Sofia" ;
+  color: white;
   
 }
 
@@ -484,7 +485,7 @@ body.theme-lava {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  cursor: url('/images/green-cursor-1.png') 4 4, auto;
+  cursor: url('/images/lava-cursor-1.png') 4 4, auto;
   min-height: 100vh;
 }
 
@@ -492,37 +493,37 @@ body.theme-lava {
   font-family: "Bebas Neue";
   text-align: center;
   margin-top: 0;
-  color: rgb(29, 90, 29);
-  font-size: 40px;
+  color: #e03719;
+  font-size: 52px;
 }
 
 .theme-lava h3 {
   font-family: "Teko";
   text-align: center;
-  color: #253b2c;
-  font-size: 20px;
+  color: #b02810;
+  font-size: 30px;
 }
 
 .theme-lava button {
-  background-color:#639473;
+  background-color:#de3412;
   color: black;
-  font-size:16px;
+  font-size:18px;
   font-family:"Teko";
   padding: 6px 12px;
   border: none;
   border-radius: 8px;
-  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
+  cursor: url('/images/lava-cursor-2.png') 4 4, pointer;
 }
 
 .theme-lava button:hover{
-  background-color:#476e53;
+  background-color:#751604;
   color: white;
-  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
+  cursor: url('/images/lava-cursor-2.png') 4 4, pointer;
 }
 
 .theme-lava li {
   font-family: "Chakra Petch";
-  font-size: 24px;
+  font-size: 18px;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -548,14 +549,14 @@ body.theme-lava {
 
 .theme-lava #todo-input {
   font-family: "Chakra Petch";
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .theme-lava input[type="checkbox"]{
   width: 20px;
   height: 20px;
-  accent-color: #73c98e;
-  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
+  accent-color: #d14d32;
+  cursor: url('/images/lava-cursor-2.png') 4 4, pointer;
 }
 
 .theme-lava .pomodoro-timer{
@@ -564,7 +565,7 @@ body.theme-lava {
   width: fit-content;
   text-align: center;
   font-family: 'Rajdhani', cursive;
-  background-color: #639473;
+  background-color: #ed5821;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba (0,0,0,0.2);
 }
@@ -572,24 +573,24 @@ body.theme-lava {
 .theme-lava #timer{
   font-size: 3rem;
   margin: 1rem 0;
-  color: #112617;
+  color: #050930;
 }
 
 .theme-lava .pomodoro-timer button {
-  background-color:#87a891;
-  font-size: 1rem;
+  background-color:#bf2e11;
+  font-size: 18px;
   color: var(--button-text);
   border: none;
   padding: 6px 12px;
   margin-left: 6px;
   margin-right: 6px;
-  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
+  cursor: url('/images/lava-cursor-2.png') 4 4, pointer;
 }
 
 .theme-lava .pomodoro-timer button:hover {
-  background-color:#112617;
+  background-color:#751b09;
   color: white;
-  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
+  cursor: url('/images/lava-cursor-2.png') 4 4, pointer;
 }
 
 .theme-lava #pomodoro-counter {
@@ -607,7 +608,7 @@ body.theme-lava {
 
 
 .theme-lava h2{
-  color:#112617;
+  color:#050930;
 }
 
 .theme-lava .theme-selector-container {
@@ -620,7 +621,7 @@ body.theme-lava {
   padding: 6px 10px;
   border-radius: 8px;
   z-index: 1000;
-  cursor: url('/images/green-cursor-2.png') 4 4, auto;
+  cursor: url('/images/lava-cursor-2.png') 4 4, auto;
 }
 
 .theme-lava #theme-selector-wrapper select {
@@ -628,14 +629,14 @@ body.theme-lava {
   padding: 4px 6px;
   border-radius: 6px;
   border: 1px solid #ccc;
-  cursor: url('/images/green-cursor-2.png') 4 4, auto;
+  cursor: url('/images/lava-cursor-2.png') 4 4, auto;
 }
 
 .theme-lava p {
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   font-family:"Bebas Neue" ;
-
+  color: #060e40;
 }
 
 body.theme-sunny {
@@ -646,7 +647,7 @@ body.theme-sunny {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  cursor: url('/images/green-cursor-1.png') 4 4, auto;
+  cursor: url('/images/sunny-cursor-1.png') 4 4, auto;
   min-height: 100vh;
 }
 
@@ -654,37 +655,37 @@ body.theme-sunny {
   font-family: "Chewy";
   text-align: center;
   margin-top: 0;
-  color: rgb(29, 90, 29);
-  font-size: 40px;
+  color: #fcd705;
+  font-size: 48px;
 }
 
 .theme-sunny h3 {
   font-family: "Comfortaa";
   text-align: center;
-  color: #253b2c;
+  color: #d6b706;
   font-size: 20px;
 }
 
 .theme-sunny button {
-  background-color:#639473;
+  background-color:#fcf792;
   color: black;
-  font-size:16px;
+  font-size:14px;
   font-family:"Comfortaa";
   padding: 6px 12px;
   border: none;
   border-radius: 8px;
-  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
+  cursor: url('/images/sunny-cursor-2.png') 4 4, pointer;
 }
 
 .theme-sunny button:hover{
-  background-color:#476e53;
+  background-color:#e6df60;
   color: white;
-  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
+  cursor: url('/images/sunny-cursor-2.png') 4 4, pointer;
 }
 
 .theme-sunny li {
   font-family: "Quicksand";
-  font-size: 24px;
+  font-size: 16px;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -710,14 +711,14 @@ body.theme-sunny {
 
 .theme-sunny #todo-input {
   font-family: "Quicksand";
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .theme-sunny input[type="checkbox"]{
   width: 20px;
   height: 20px;
-  accent-color: #73c98e;
-  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
+  accent-color: #40e8f7;
+  cursor: url('/images/sunny-cursor-2.png') 4 4, pointer;
 }
 
 .theme-sunny .pomodoro-timer{
@@ -726,7 +727,7 @@ body.theme-sunny {
   width: fit-content;
   text-align: center;
   font-family: 'Karla', cursive;
-  background-color: #639473;
+  background-color: #e0d72d;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba (0,0,0,0.2);
 }
@@ -734,24 +735,24 @@ body.theme-sunny {
 .theme-sunny #timer{
   font-size: 3rem;
   margin: 1rem 0;
-  color: #112617;
+  color: #1c8a77;
 }
 
 .theme-sunny .pomodoro-timer button {
-  background-color:#87a891;
-  font-size: 1rem;
+  background-color:#1c8a77;
+  font-size: 14px;
   color: var(--button-text);
   border: none;
   padding: 6px 12px;
   margin-left: 6px;
   margin-right: 6px;
-  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
+  cursor: url('/images/sunny-cursor-2.png') 4 4, pointer;
 }
 
 .theme-sunny .pomodoro-timer button:hover {
-  background-color:#112617;
+  background-color:#084239;
   color: white;
-  cursor: url('/images/green-cursor-2.png') 4 4, pointer;
+  cursor: url('/images/sunny-cursor-2.png') 4 4, pointer;
 }
 
 .theme-sunny #pomodoro-counter {
@@ -769,7 +770,7 @@ body.theme-sunny {
 
 
 .theme-sunny h2{
-  color:#112617;
+  color:#1c8a77;
 }
 
 .theme-sunny .theme-selector-container {
@@ -782,7 +783,7 @@ body.theme-sunny {
   padding: 6px 10px;
   border-radius: 8px;
   z-index: 1000;
-  cursor: url('/images/green-cursor-2.png') 4 4, auto;
+  cursor: url('/images/sunny-cursor-2.png') 4 4, auto;
 }
 
 .theme-sunny #theme-selector-wrapper select {
@@ -790,13 +791,14 @@ body.theme-sunny {
   padding: 4px 6px;
   border-radius: 6px;
   border: 1px solid #ccc;
-  cursor: url('/images/green-cursor-2.png') 4 4, auto;
+  cursor: url('/images/sunny-cursor-2.png') 4 4, auto;
 }
 
 .theme-sunny p {
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   font-family:"Chewy" ;
+  color: #06c5d6;
 
 }
 /*
