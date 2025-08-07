@@ -2,10 +2,8 @@ const form = document.getElementById("todo-form");
 const input = document.getElementById("todo-input");
 const list = document.getElementById("todo-list");
 
-const BASE_URL = "https://to-do-list-production-b872.up.railway.app";
-
 async function fetchTodos() {
-    const res = await fetch(`${BASE_URL}/api/todos`);
+    const res = await fetch(`/api/todos`);
     const todos = await res.json();
 
     list.innerHTML = "";
@@ -20,7 +18,7 @@ async function fetchTodos() {
         if (todo.done) completedCount++;
 
         checkbox.addEventListener("change", async () => {
-            await fetch(`${BASE_URL}/api/todos/${todo._id}`, {
+            await fetch(`/api/todos/${todo._id}`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ done: checkbox.checked }),
@@ -44,7 +42,7 @@ async function fetchTodos() {
             e.stopPropagation();
             const newText = prompt("Edit your task:", todo.text);
             if (newText !== null && newText.trim() !== "") {
-                await fetch(`${BASE_URL}/api/todos/${todo._id}`, {
+                await fetch(`/api/todos/${todo._id}`, {
                     method: "PUT",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ text: newText }),
@@ -58,7 +56,7 @@ async function fetchTodos() {
         delBtn.style.marginLeft = "10px";
         delBtn.addEventListener("click", async (e) => {
             e.stopPropagation();
-            await fetch(`${BASE_URL}/api/todos/${todo._id}`, {
+            await fetch(`/api/todos/${todo._id}`, {
                 method: "DELETE"
             });
             fetchTodos();
@@ -82,7 +80,7 @@ form.addEventListener("submit", async (e) => {
     const text = input.value.trim();
     if (!text) return;
 
-    await fetch(`${BASE_URL}/api/todos`, {
+    await fetch(`/api/todos`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text }),
