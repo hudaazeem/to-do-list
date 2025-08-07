@@ -2,19 +2,17 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const express = require('express');
 const cors = require("cors");
+const path = require("path");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
-
-app.get('/', (req, res) => {
-  res.send('Backend is running.');
-});
+app.use(express.static(path.join(__dirname, 'frontend-vercel')));
 
 app.get('/health', (req, res) => {
-  res.send('OK');
+  res.send('Backend is running and healthy.');
 });
 
 mongoose.connect(process.env.MONGODB_URI, { dbName: 'todoDB' })
@@ -51,6 +49,10 @@ mongoose.connect(process.env.MONGODB_URI, { dbName: 'todoDB' })
     app.delete('/api/todos/:id', async (req, res) => {
       await Todo.findByIdAndDelete(req.params.id);
       res.json({ message: "Deleted" });
+    });
+
+    app.get('*', (req, res) => {
+      res.sendFile(path.join(__dirname, 'frontend-vercel', 'index.html'));
     });
 
     app.listen(PORT, '0.0.0.0', () => {
