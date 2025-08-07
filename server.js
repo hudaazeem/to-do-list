@@ -4,13 +4,17 @@ const express = require('express');
 const cors = require("cors");
 const path = require("path");
 
-const app = express();
+const app = express(); 
 const PORT = process.env.PORT || 3000;
 
-app.use(cors());
-app.get('/*', (req, res) => {
-  res.send('Hello from backend root');
-});
+const corsOptions = {
+  origin: "*", 
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type"]
+};
+
+app.use(cors(corsOptions)); 
+
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'frontend-vercel')));
 
@@ -54,13 +58,8 @@ mongoose.connect(process.env.MONGODB_URI, { dbName: 'todoDB' })
       res.json({ message: "Deleted" });
     });
 
-    const frontendPath = path.join(__dirname, 'frontend-vercel', 'index.html');
-    app.get('/*splat', (req, res) => {
-      res.sendFile(frontendPath, (err) => {
-        if (err) {
-          res.status(500).send('Error loading frontend.');
-        }
-      });
+    app.get('*', (req, res) => {
+      res.sendFile(path.join(__dirname, 'frontend-vercel', 'index.html'));
     });
 
     app.listen(PORT, '0.0.0.0', () => {
@@ -70,5 +69,5 @@ mongoose.connect(process.env.MONGODB_URI, { dbName: 'todoDB' })
   })
   .catch(err => {
     console.error("MongoDB connection error:", err);
-    process.exit(1); 
+    process.exit(1);
   });
