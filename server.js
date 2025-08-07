@@ -51,8 +51,13 @@ mongoose.connect(process.env.MONGODB_URI, { dbName: 'todoDB' })
       res.json({ message: "Deleted" });
     });
 
+    const frontendPath = path.join(__dirname, 'frontend-vercel', 'index.html');
     app.get('*', (req, res) => {
-      res.sendFile(path.join(__dirname, 'frontend-vercel', 'index.html'));
+      res.sendFile(frontendPath, (err) => {
+        if (err) {
+          res.status(500).send('Error loading frontend.');
+        }
+      });
     });
 
     app.listen(PORT, '0.0.0.0', () => {
