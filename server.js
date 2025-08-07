@@ -52,7 +52,7 @@ mongoose.connect(process.env.MONGODB_URI, { dbName: 'todoDB' })
     });
 
     const frontendPath = path.join(__dirname, 'frontend-vercel', 'index.html');
-    app.get('*', (req, res) => {
+    app.get('/*splat', (req, res) => {
       res.sendFile(frontendPath, (err) => {
         if (err) {
           res.status(500).send('Error loading frontend.');
