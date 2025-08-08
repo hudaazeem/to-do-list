@@ -5,7 +5,7 @@ const cors = require("cors");
 const path = require("path");
 
 const app = express(); 
-const PORT = process.env.PORT || 4002;
+const PORT = process.env.PORT || 3000;
 
 
 const mongodb_uri = process.env.MONGODB_URI || 'mongodb+srv://hudaazeem:qazplm456@todo-list.tkdmc4g.mongodb.net/?retryWrites=true&w=majority&appName=todo-list'
